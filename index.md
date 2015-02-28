@@ -6,7 +6,7 @@ customCSS: seven-keys.css
 </div>
 
 <div class="welcome">
-  <a href="/"><img src="https://pbs.twimg.com/profile_images/2169145741/white_bowl__400x400.png" alt="" class="avatar"></a>
+  <a href="{{ site.baseurl}}/"><img src="https://pbs.twimg.com/profile_images/2169145741/white_bowl__400x400.png" alt="" class="avatar"></a>
   <h1 id="fittext_2">Seven Simple Keys</h1>
   <h2 id="fittext_3">Making the book of Revelation Easy to Understand</h2>
   <h2 id="fittext_3">by <a href="http://coreystark.com">Corey Stark</a></h2>

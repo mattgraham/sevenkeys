@@ -52,7 +52,7 @@
       <div class="error"><strong>#{CGI.escapeHTML(error.to_s)}</strong></div>
       <div class="load">
         <strong><a href="#{request.uri}">Reload</a></strong> this page. 
-        Go to the <strong><a href="#{request.referer}">referer</a></strong> or the <strong><a href="/">home page</a></strong>.
+        Go to the <strong><a href="#{request.referer}">referer</a></strong> or the <strong><a href="{{ site.baseurl}}/">home page</a></strong>.
       </div>
       <div class="source">
       <?r 
@@ -123,7 +123,7 @@
 </html>
 <SystemPage>
   <?r base = "#{@base}/%base%" ?>
-  <h1><a href="/"> Home</a> > <a href="#@base">System</a> > <a href="#{base}/list">#{"%plural%".humanize}</a> > Edit #{"%name%".humanize} </h1>
+  <h1><a href="{{ site.baseurl}}/"> Home</a> > <a href="#@base">System</a> > <a href="#{base}/list">#{"%plural%".humanize}</a> > Edit #{"%name%".humanize} </h1>
   <?r if @all ?>
     <a href="#{request.uri.gsub(/\/all$/, '')}">Show editable</a>
     #{form_for @obj, :action => "#{base}/save", :cancel => "#{base}/list", :all => true}
@@ -155,7 +155,7 @@
 </SystemPage>
 <SystemPage>
   <?r base = "#{@base}/%base%" ?>
-  <h1><a href="/"> Home</a> > <a href="#@base">System</a> > #{"%plural%".humanize}</h1>
+  <h1><a href="{{ site.baseurl}}/"> Home</a> > <a href="#@base">System</a> > #{"%plural%".humanize}</h1>
   <a href="#{base}/new">New #{"%name%".humanize}</a>
   <p>
   <form action="#{base}/search">
@@ -180,7 +180,7 @@
 </SystemPage>
 <SystemPage>
   <?r base = "#{@base}/%base%" ?>
-  <h1><a href="/"> Home</a> > <a href="#@base">System</a> > <a href="#{base}/list">#{"%plural%".humanize}</a> > New #{"%name%".humanize}</h1>
+  <h1><a href="{{ site.baseurl}}/"> Home</a> > <a href="#@base">System</a> > <a href="#{base}/list">#{"%plural%".humanize}</a> > New #{"%name%".humanize}</h1>
   <?r if @all ?>
     <a href="#{request.uri.gsub(/\/all$/, '')}">Show editable</a>
     #{form_for @obj, :action => "#{base}/save", :cancel => "#{base}/list", :all => true, :enctype => "multipart/form-data"}
@@ -191,7 +191,7 @@
 </SystemPage>
 <SystemPage>
   <?r base = "#{@base}/%base%" ?>
-  <h1><a href="/"> Home</a> > <a href="#@base">System</a> > <a href="#{base}/list">#{"%plural%".humanize}</a> > Search for '#@query'</h1>
+  <h1><a href="{{ site.baseurl}}/"> Home</a> > <a href="#@base">System</a> > <a href="#{base}/list">#{"%plural%".humanize}</a> > Search for '#@query'</h1>
   <p>
   <form action="#{base}/search">
     Search #{"%plural%".humanize}: <input type="text" name="q" />&nbsp;<input type="submit" value="Search" />
@@ -373,4 +373,4 @@ Here is your <b>Token</b>: #{token}
   <render href="/right" />
 </Page>
 
-<!-- Copyright © 2006 Kashia Buch (kashia@vfemail.net), Fabian Buch (fabian@fabian-buch.de). All rights reserved. -->
+<!-- Copyright ï¿½ 2006 Kashia Buch (kashia@vfemail.net), Fabian Buch (fabian@fabian-buch.de). All rights reserved. -->

@@ -11,7 +11,7 @@ This is some text
 </div>
 
 <div>
-<p><a href="/">Foo</a></p>
+<p><a href="{{ site.baseurl}}/">Foo</a></p>
 </div>
 
 <p>This is some

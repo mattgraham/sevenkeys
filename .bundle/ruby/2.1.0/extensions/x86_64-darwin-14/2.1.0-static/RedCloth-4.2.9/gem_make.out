@@ -11,5 +11,5 @@ compiling redcloth_scan.c
 linking shared-object redcloth_scan.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 redcloth_scan.bundle ./.gem.20150227-3241-1c25etb
+/usr/bin/install -c -m 0755 redcloth_scan.bundle ./.gem.20150228-54493-76va4n
 installing default redcloth_scan libraries

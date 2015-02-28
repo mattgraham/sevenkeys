@@ -18,5 +18,5 @@ posix-spawn.c:3:9: note: previous definition is here
 linking shared-object posix_spawn_ext.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 posix_spawn_ext.bundle ./.gem.20150227-3667-12fjetb
+/usr/bin/install -c -m 0755 posix_spawn_ext.bundle ./.gem.20150228-54493-1ptax1c
 installing default posix_spawn_ext libraries

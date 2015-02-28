@@ -17,5 +17,5 @@ compiling porter_wrap.c
 linking shared-object stemmer.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 stemmer.bundle ./.gem.20150227-3667-sgpzu1
+/usr/bin/install -c -m 0755 stemmer.bundle ./.gem.20150228-54493-1szecen
 installing default stemmer libraries

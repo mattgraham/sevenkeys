@@ -1,0 +1,43 @@
+## HEAD
+
+### Major Enhancements
+
+### Minor Enhancements
+
+### Bug Fixes
+
+### Development Fixes
+
+## 0.3.1 / 2014-01-22
+
+### Bug Fixes
+
+  * Add `safe true` to the `Jekyll::Generator` so it can be run in safe mode (#12)
+
+## 0.3.0 / 2014-01-15
+
+### Major Enhancements
+
+  * `redirect_from` items are now proper permalinks rooted in site source (#8)
+
+### Development Fixes
+
+  * Add forgotten `s` to `gems` in README.md (#7)
+
+## 0.2.0 / 2014-01-04
+
+### Minor Enhancements
+
+  * Allow user to set one or many `redirect_from` URLs
+  * Rename from `jekyll-alt-urls` to `jekyll-redirect-from` (props to @benbalter)
+  * Namespace now its own module: `JekyllRedirectFrom` (#3)
+
+### Development Fixes
+
+  * Add history file
+  * Add specs (#3)
+  * Add TravisCI badge (#4)
+
+## 0.1.0 / 2013-12-15
+
+* Birthday!
